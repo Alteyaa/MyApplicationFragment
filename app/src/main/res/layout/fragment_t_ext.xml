@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@android:color/holo_green_light"
-    tools:context=".TExtFragment">
+    tools:context=".TExtFragment"
+    android:id="@+id/fragment_parent">
 
     <TextView
         android:id="@+id/txtView"
@@ -24,6 +25,12 @@
         android:textSize="14sp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/hello_blank_fragment" />
+
+    <Button
+        android:id="@+id/btnChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
 
 
 </LinearLayout>

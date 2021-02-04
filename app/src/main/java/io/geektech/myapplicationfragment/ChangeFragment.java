@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,6 +26,7 @@ public class ChangeFragment extends Fragment implements IFragments{
 
     private String mParam1;
     private String mParam2;
+
 
     IFragments iFragments;
 
@@ -65,6 +68,7 @@ public class ChangeFragment extends Fragment implements IFragments{
 
         View view = inflater.inflate(R.layout.fragment_change, container, false);
         recyclerView = view.findViewById(R.id.recyclerView);
+
         setupRecyclerView();
         return  view;
     }
@@ -86,6 +90,7 @@ public class ChangeFragment extends Fragment implements IFragments{
         adapter.setOnClickListener(this);
         recyclerView.setAdapter(adapter);
     }
+
 
     @Override
     public void displayDetails(String title, String subTitle) {

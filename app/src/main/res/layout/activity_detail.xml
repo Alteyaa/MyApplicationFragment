@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
-    <fragment
-        android:id="@+id/fragmentText"
+    <FrameLayout
+        android:id="@+id/contentMain"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="io.geektech.myapplicationfragment.TExtFragment"
-        tools:layout="@layout/fragment_t_ext"/>
+        android:layout_height="match_parent" />
+
+    //
+
 </androidx.constraintlayout.widget.ConstraintLayout>

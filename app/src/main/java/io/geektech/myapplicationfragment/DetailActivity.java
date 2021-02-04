@@ -24,9 +24,9 @@ public class DetailActivity extends AppCompatActivity {
             subTitle = intent.getStringExtra("keyDesc");
         }
         FragmentManager fragmentManager = getSupportFragmentManager();
-        TExtFragment fragment = (TExtFragment) fragmentManager.findFragmentById(R.id.fragmentText);
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        fragment.showText(title,subTitle);
+        TExtFragment fragment =new TExtFragment();
+        transaction.add(R.id.contentMain,fragment);
         transaction.commit();
     }
 }
