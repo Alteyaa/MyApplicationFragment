@@ -64,7 +64,7 @@ public class TExtFragment extends Fragment {
         btnChild.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showChildFragment(ChildFragment.newInstance(TExtFragment.this, "Hello from parent fragment"),ChildFragment.TAG);
+                showChildFragment(ChildFragment.newInstance(TExtFragment.this, "Hello from parent fragment",R.drawable.ic_launcher_background),ChildFragment.TAG);
             }
         });
 
